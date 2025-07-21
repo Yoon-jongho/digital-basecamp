@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 디지털 베이스캠프 (Digital Basecamp)
 
-## Getting Started
+> "아웃풋이 확실한 개발자 상장청부사" - 개발자 윤종호의 개인 블로그 및 포트폴리오
 
-First, run the development server:
+## 🚀 프로젝트 소개
+
+디지털 베이스캠프는 제가 개발자로서의 성장 과정과 전문성을 보여주는 개인 웹사이트입니다.
+기술 블로그를 통한 지식 공유와 프로젝트 포트폴리오를 통해 "아웃풋이 확실한 개발자"임을 증명합니다.
+
+### 주요 특징
+
+- 📝 기술 블로그 - 개발 경험과 학습 내용 공유
+- 💼 포트폴리오 - 프로젝트 케이스 스터디
+- 🎨 깔끔한 디자인 - 전문성과 친근함을 동시에 표현
+- ⚡ 빠른 성능 - Next.js SSG를 활용한 최적화
+
+## 🛠️ 기술 스택
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Content**: Markdown/MDX
+- **Deployment**: Vercel
+- **Database**: Supabase (예정)
+
+## 🏃‍♂️ 로컬 실행 방법
+
+### 필수 요구사항
+
+- Node.js 18.0.0 이상
+- npm 또는 yarn
+
+### 설치 및 실행
 
 ```bash
+# 저장소 클론
+git clone https://github.com/Yoon-jongho/digital-basecamp.git
+cd digital-basecamp
+
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 [http://localhost:3000](http://localhost:3000)으로 접속하세요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 빌드
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 프로덕션 빌드
+npm run build
 
-## Learn More
+# 프로덕션 모드 실행
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 프로젝트 구조
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+digital-basecamp/
+├── src/
+│   ├── app/              # App Router 페이지
+│   ├── components/       # 재사용 가능한 컴포넌트
+│   ├── lib/             # 유틸리티 함수
+│   └── types/           # TypeScript 타입 정의
+├── public/              # 정적 파일
+├── content/             # 블로그 포스트 (Markdown/MDX)
+└── ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 디자인 시스템
 
-## Deploy on Vercel
+### 컬러 팔레트
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Primary**: 파스텔 블루 (#7E9EFC) - 전문성과 신뢰감
+- **Secondary**: 소프트 코랄 (#FAA1A1) - 따뜻함과 친근함
+- **Accent**: 민트 그린 (#5CC97B) - 성장과 발전
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Typography
+
+- **Font**: Pretendard
+- **Headings**: Bold weight
+- **Body**: Regular weight
+
+## 🚧 개발 로드맵
+
+- [x] 프로젝트 초기 설정
+- [ ] 디자인 시스템 구축
+- [ ] 기본 레이아웃 구현
+- [ ] 블로그 기능 구현
+- [ ] About 페이지 제작
+- [ ] 포트폴리오 섹션
+- [ ] SEO 최적화
+- [ ] 댓글 시스템 (Supabase)
+
+## 📝 라이선스
+
+이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
+
+## 📞 연락처
+
+- **Email**: llsee01@naver.com
+- **GitHub**: [@Yoon-jongho](https://github.com/YOUR_USERNAME)
+- **LinkedIn**: [윤종호](https://www.linkedin.com/in/jong-ho-yoon-725671335/)
+
+---
+
+Made with ❤️ by Jongho Yoon
