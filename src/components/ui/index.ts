@@ -7,14 +7,13 @@
 
 // UI 컴포넌트들
 export { HeroSection } from './HeroSection/HeroSection';
+export { BlogCard } from './BlogCard';
+
+// 타입 export
+export type { BlogCardProps, BlogPost } from './BlogCard';
 
 // 추가 예정 컴포넌트들
-// export { BlogCard } from './BlogCard';
 // export { BlogList } from './BlogList';
 // export { TechStackSlider } from './TechStackSlider';
 // export { AboutTimeline } from './AboutTimeline';
 // export { TableOfContents } from './TableOfContents';
-
-// 타입도 함께 export 할 수 있습니다.
-// export type { BlogCardProps } from './BlogCard';
-// export type { TechStackSliderProps } from './TechStackSlider';
