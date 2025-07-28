@@ -6,8 +6,9 @@
  */
 
 // UI 컴포넌트들
-export { HeroSection } from './HeroSection/HeroSection';
+export { HeroSection } from './HeroSection';  // /HeroSection.tsx 제거
 export { BlogCard } from './BlogCard';
+export { LatestPostsSection } from './LatestPostsSection';
 
 // 타입 export
 export type { BlogCardProps, BlogPost } from './BlogCard';

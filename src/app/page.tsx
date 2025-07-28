@@ -1,5 +1,5 @@
 import { PageLayout } from '@/components/layout';
-import { HeroSection, BlogCard } from '@/components/ui';
+import { HeroSection, LatestPostsSection } from '@/components/ui';
 import type { BlogPost } from '@/components/ui';
 
 // 테스트용 더미 데이터
@@ -50,20 +50,11 @@ export default function HomePage() {
     <PageLayout>
       <HeroSection />
       
-      {/* BlogCard 테스트 섹션 */}
-      <section className="py-20 px-6 md:px-8 bg-gradient-to-b from-white/5 to-transparent">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-            최신 포스트
-          </h2>
-          
-          <div className="space-y-6">
-            {dummyPosts.map((post) => (
-              <BlogCard key={post.id} post={post} />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* LatestPostsSection으로 교체 */}
+      <LatestPostsSection 
+        posts={dummyPosts.slice(0, 3)} // 최신 3개만 표시
+        className="bg-gradient-to-b from-white/5 to-transparent"
+      />
       
       {/* 추가 섹션들이 여기에 들어갈 예정 */}
       {/* <TechStackSection /> */}
