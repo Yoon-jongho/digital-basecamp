@@ -41,6 +41,8 @@ module.exports = {
         "float-geometric": "floatGeometric 5s ease-in-out infinite",
         "float-particle": "floatParticle 8s linear infinite",
         "pulse-soft": "pulseSoft 3s ease-in-out infinite",
+        "gentle-spin": "gentleSpin 30s linear infinite",
+        "fade-in": "fadeIn 0.5s ease-out",
       },
       keyframes: {
         gradientShift: {
@@ -80,12 +82,51 @@ module.exports = {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.05)" },
         },
+        gentleSpin: {
+          "from": { transform: "rotateX(-10deg) rotateY(0deg)" },
+          "to": { transform: "rotateX(-10deg) rotateY(360deg)" },
+        },
+        fadeIn: {
+          "from": { opacity: "0", transform: "translateY(10px)" },
+          "to": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       boxShadow: {
         soft: "0 20px 40px rgba(0, 0, 0, 0.1)",
         "soft-hover": "0 25px 50px rgba(0, 0, 0, 0.15)",
       },
+      transformStyle: {
+        "3d": "preserve-3d",
+      },
+      perspective: {
+        "1000": "1000px",
+        "2000": "2000px",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function({ addUtilities }) {
+      addUtilities({
+        ".preserve-3d": {
+          transformStyle: "preserve-3d",
+        },
+        ".perspective-1000": {
+          perspective: "1000px",
+        },
+        ".backface-hidden": {
+          backfaceVisibility: "hidden",
+        },
+        ".animation-delay-0": {
+          animationDelay: "0ms",
+        },
+        ".animation-delay-100": {
+          animationDelay: "100ms",
+        },
+        ".animation-delay-200": {
+          animationDelay: "200ms",
+        },
+      });
+    },
+  ],
 };
