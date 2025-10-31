@@ -1,9 +1,6 @@
 // Server Component - SSR 최적화
 import { TechStackClient } from "./TechStackClient";
-import {
-  TechStackSectionProps,
-  categoryColors,
-} from "./TechStackSection.types";
+import { TechStackSectionProps } from "./TechStackSection.types";
 
 // 기술 스택 데이터 (서버/클라이언트 공유)
 export const techStacks = [

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { BlogCardProps, categoryColors } from "./BlogCard.types";
 
 export const BlogCard = ({ post, onClick, className = "" }: BlogCardProps) => {
@@ -30,9 +31,11 @@ export const BlogCard = ({ post, onClick, className = "" }: BlogCardProps) => {
         {/* 썸네일 영역 */}
         {thumbnail && (
           <div className="flex-shrink-0 w-32 h-32 overflow-hidden rounded-xl bg-gradient-to-br from-gray-100 to-gray-200">
-            <img
+            <Image
               src={thumbnail}
               alt={title}
+              width={128}
+              height={128}
               className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
             />
           </div>

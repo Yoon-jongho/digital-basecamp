@@ -43,3 +43,6 @@ next-env.d.ts
 # gemini
 /.gemini
 /.progress_text
+
+mcp-server.log
+.clinerules
